@@ -54,12 +54,23 @@ class SimpleCalcView extends StatelessWidget {
                                 ),
                               ),
                               Expanded(
-                                child: TextField(
-                                  controller: _costController,
-                                  decoration: InputDecoration(
-                                    border: OutlineInputBorder(),
-                                    hintText: 'Enter cost',
-                                  ),
+                                child: Row(
+                                  children: [
+                                    Text(
+                                      'R',
+                                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                                    ),
+                                    SizedBox(width: 4), // Add some spacing between "R" and the TextField
+                                    Expanded(
+                                      child: TextField(
+                                        controller: _costController,
+                                        decoration: InputDecoration(
+                                          border: OutlineInputBorder(),
+                                          hintText: 'Enter cost',
+                                        ),
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ),
                             ],
@@ -74,12 +85,23 @@ class SimpleCalcView extends StatelessWidget {
                                 ),
                               ),
                               Expanded(
-                                child: TextField(
-                                  controller: _tenderController,
-                                  decoration: InputDecoration(
-                                    border: OutlineInputBorder(),
-                                    hintText: 'Enter tender amount',
-                                  ),
+                                child: Row(
+                                  children: [
+                                    Text(
+                                      'R',
+                                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                                    ),
+                                    SizedBox(width: 4), // Add some spacing between "R" and the TextField
+                                    Expanded(
+                                      child: TextField(
+                                        controller: _tenderController,
+                                        decoration: InputDecoration(
+                                          border: OutlineInputBorder(),
+                                          hintText: 'Enter tender amount',
+                                        ),
+                                      ),
+                                    ),
+                                  ],
                                 ),
                               ),
                             ],
